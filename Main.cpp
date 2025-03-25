@@ -94,16 +94,6 @@ public:
         }
     }
 
-    // Деструктор для освобождения памяти
-    ~LinkedList() {
-        while (head) {
-            Node* temp = head;
-            head = head->next;
-            delete temp;
-        }
-    }
-};
-
 // Основная функция
 int main() {
     LinkedList list;
